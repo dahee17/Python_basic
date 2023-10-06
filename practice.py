@@ -25,6 +25,52 @@ result = total / length
 print(round(result,2)) # 평균값
 
 # 문제 4) list b에서 최소값 찾기!
+print("=" * 200)
 b = [22, 1, 4, 7, 98]
-
+num_min = b[0]
+for x in b :
+    if x < num_min:
+        num_min = x
 print(num_min)  # 1 출력
+
+# 문제 5) list c의 최솟값, 최대값 찾기
+print("=" * 200)
+c = [2, 5, 7, 1, 8]
+num_min = num_max = c[0]
+for i in c:
+    if i < num_min:
+        num_min = i
+    if j > num_max:
+        num_max = i
+
+print(num_min)
+print(num_max)
+
+print("=" * 200)
+# 사용자가 입력한 값 1, 2, 3
+# 아닌 경우 다시 입력하도록.
+num = int(input("값 : "))
+# if 4 > num >0 :
+while True :
+    if num in [1, 2, 3]:
+      print(f"{num}을 입력하셨습니다.")
+      break
+    else:
+      print("1, 2, 3의 값만 입력해주세요.")
+      break
+
+# 문제 7> 1부터 100까지 총합을 출력하는 코드
+print("=" * 200)
+sum = 0
+for X in range(1, 101) :
+    sum += X
+print(sum)
+
+tot = 0
+j = 0
+while True:
+    j += 1
+    if j == 101:
+        break
+    tot += j
+print(tot)
